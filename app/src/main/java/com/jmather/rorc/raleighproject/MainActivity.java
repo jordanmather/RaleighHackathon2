@@ -7,9 +7,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.EditText;
 
 import org.json.JSONArray;
+=======
+
+>>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
 
 
 public class MainActivity extends ActionBarActivity {

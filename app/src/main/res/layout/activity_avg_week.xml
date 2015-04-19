@@ -73,6 +73,7 @@
         android:id="@+id/textView8"
         android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true" />
+<<<<<<< HEAD
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,4 +107,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="63dp" />
+=======
+>>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
 </RelativeLayout>

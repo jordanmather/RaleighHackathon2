@@ -1,7 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     tools:context="com.jmather.rorc.raleighproject.avg_day">
+=======
+    tools:context="com.jmather.rorc.raleighproject.AvgDay">
+>>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>

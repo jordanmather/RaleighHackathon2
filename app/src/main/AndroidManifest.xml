@@ -36,6 +36,7 @@
             android:name=".AvgYear"
             android:label="@string/title_activity_avg_year" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".MainActivity2Activity"
             android:label="@string/title_activity_main_activity2" >
@@ -44,6 +45,8 @@
             android:name=".avg_day"
             android:label="@string/title_activity_avg_day" >
         </activity>
+=======
+>>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
     </application>
 
 </manifest>
