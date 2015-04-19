@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:text="Avg Day"
         android:id="@+id/avgdaybutton"
-        android:layout_alignTop="@+id/avgweekbutton"
-        android:layout_toLeftOf="@+id/TodayLabel"
-        android:layout_toStartOf="@+id/TodayLabel"
         android:clickable="true"
-        android:onClick="avgDay"/>
+        android:onClick="avgDay"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/TodayLabel"
+        android:layout_toStartOf="@+id/TodayLabel" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -35,11 +35,11 @@
         android:layout_height="wrap_content"
         android:text="Avg Week"
         android:id="@+id/avgweekbutton"
-        android:layout_alignTop="@+id/AVGMONTH"
         android:layout_toRightOf="@+id/avgdaybutton"
         android:clickable="true"
         android:layout_alignParentBottom="true"
-        android:onClick="avgWeek"/>
+        android:onClick="avgWeek"
+        android:layout_alignTop="@+id/avgdaybutton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -47,24 +47,23 @@
         android:layout_height="wrap_content"
         android:text="AVG MONTH"
         android:id="@+id/AVGMONTH"
+        android:clickable="true"
+        android:onClick="avgMonth"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/avgweekbutton"
-        android:layout_toLeftOf="@+id/avgyearly"
-        android:layout_toStartOf="@+id/avgyearly"
-        android:clickable="true"
-        android:onClick="avgMonth"/>
+        android:layout_toEndOf="@+id/avgweekbutton"
+        android:layout_alignTop="@+id/avgweekbutton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Avg Year"
         android:id="@+id/avgyearly"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:clickable="true"
-        android:layout_alignTop="@+id/AVGMONTH"
-        android:onClick="avgYear"/>
+        android:onClick="avgYear"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/AVGMONTH"
+        android:layout_toEndOf="@+id/AVGMONTH" />
 
     <TextView
         android:layout_width="wrap_content"
