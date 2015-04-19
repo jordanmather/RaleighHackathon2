@@ -129,7 +129,6 @@ public class DriveInstance
         //from json instead of doing it ourselves, which is why I only put the general
         //format here.
 
-
         //returns a json representation of this object
         //the structure should be something like this:
 		/*

@@ -11,6 +11,8 @@ import android.widget.EditText;
 
 import org.json.JSONArray;
 
+import java.util.Timer;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -61,8 +63,11 @@ public class MainActivity extends ActionBarActivity {
     {
         //start a thread to deal with the recording, then display the dashboard
         //RecordingDrive rd = new RecordingDrive(); //might be threaded later and need more
+        GPS startGPS = new GPS();
+        startGPS.start();
         Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
+
     }
 
 
