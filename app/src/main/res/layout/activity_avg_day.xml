@@ -7,6 +7,8 @@
     tools:context="com.barnbuilders.nicholaslargen.mycommute.AvgDay"
     android:background="@drawable/backgrounddash">
 
+
+
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -14,7 +16,7 @@
         android:text="Avg Day"
         android:id="@+id/button"
         android:clickable="false"
-        android:onClick="avgDay"
+        android:onClick="AvgDay"
         android:layout_alignTop="@+id/button9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -26,7 +28,7 @@
         android:text="Avg Week"
         android:id="@+id/button5"
         android:clickable="true"
-        android:onClick="avgWeek"
+        android:onClick="AvgWeek"
         android:layout_alignTop="@+id/button"
         android:layout_toRightOf="@+id/button"
         android:layout_toEndOf="@+id/button" />
@@ -38,7 +40,7 @@
         android:text="AVG MONTH"
         android:id="@+id/button9"
         android:clickable="true"
-        android:onClick="avgMonth"
+        android:onClick="AvgMonth"
         android:layout_alignTop="@+id/button13"
         android:layout_toRightOf="@+id/button5"
         android:layout_toLeftOf="@+id/button13"
@@ -50,7 +52,7 @@
         android:text="Avg Year"
         android:id="@+id/button13"
         android:clickable="true"
-        android:onClick="avgYear"
+        android:onClick="AvgYear"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -73,4 +75,40 @@
         android:id="@+id/textView3"
         android:layout_below="@+id/avgday"
         android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Avg Time Driven Daily: "
+        android:id="@+id/avgdailytime"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Avg Miles Driven Daily:"
+        android:id="@+id/avgdailymiles"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/avgdailytime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Avg Daily Speed:"
+        android:id="@+id/avgdailyspeed"
+        android:layout_below="@+id/avgdailymiles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+
 </RelativeLayout>

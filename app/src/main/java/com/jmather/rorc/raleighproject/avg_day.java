@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class AvgDay extends ActionBarActivity {
+public class avg_day extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
