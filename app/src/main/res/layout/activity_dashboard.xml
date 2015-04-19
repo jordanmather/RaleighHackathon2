@@ -29,7 +29,6 @@
         android:layout_toStartOf="@+id/TodayLabel"
         android:clickable="true"
         android:onClick="avgDay"/>
-=======
         android:clickable="true"
         android:onClick="avgDay"
         android:layout_alignParentBottom="true"

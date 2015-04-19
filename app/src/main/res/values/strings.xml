@@ -8,8 +8,7 @@
     <string name="title_activity_avg_week">AvgWeek</string>
     <string name="title_activity_avg_month">AvgMonth</string>
     <string name="title_activity_avg_year">AvgYear</string>
-<<<<<<< HEAD
+
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
-=======
->>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
+
 </resources>

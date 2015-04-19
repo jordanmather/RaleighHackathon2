@@ -14,7 +14,7 @@
         android:text="Avg Day"
         android:id="@+id/button3"
         android:clickable="true"
-        android:onClick="avgDay"
+        android:onClick="AvgDay"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -38,7 +38,7 @@
         android:text="AVG MONTH"
         android:id="@+id/button11"
         android:clickable="false"
-        android:onClick="avgMonth"
+        android:onClick="AvgMonth"
         android:layout_alignTop="@+id/button7"
         android:layout_toRightOf="@+id/button7"
         android:layout_toLeftOf="@+id/button15"
@@ -50,7 +50,7 @@
         android:text="Avg Year"
         android:id="@+id/button15"
         android:clickable="true"
-        android:onClick="avgYear"
+        android:onClick="AvgYear"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -73,7 +73,7 @@
         android:id="@+id/textView7"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true" />
-<<<<<<< HEAD
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,6 +106,5 @@
         android:layout_below="@+id/avgmonthlymileagedriven"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-=======
->>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
+
 </RelativeLayout>

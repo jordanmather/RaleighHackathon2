@@ -26,8 +26,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.0.0'
-<<<<<<< HEAD
-=======
     compile files('libs/json-simple-1.1.1.jar')
->>>>>>> 756277a303a7ecca420c2248f8264a49519cb53b
+
 }
