@@ -7,6 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 
 public class InfoCalculator
@@ -22,6 +23,58 @@ public class InfoCalculator
         //assume the data can be passed as a LinkedList of strings
         //where each index is a different instance of DriveInstance
         this.saveData = saveData;
+    }
+
+    public InfoCalculator()
+    {
+        //the mock method in case we need fake data for demonstration
+        int monthCount = 0;
+        int dayCount = 0;
+        int yearCount = 0;
+        int dayTracker = 0;
+
+        for(int i = 0; i < 365; i++)
+        {
+            if(monthCount == 0 || dayCount == 23)
+            {
+                monthCount++;
+            }
+            if(monthCount == 13)
+            {
+                monthCount = 1;
+                yearCount++;
+            }
+            if(dayCount == 0)
+            {
+                dayCount++;
+            }
+            if(dayCount == 24)
+            {
+                dayCount = 1;
+            }
+            String date = monthCount + "/" + dayCount + "/" + yearCount;
+            String[] dayArray = {"sun", "mon", "tue", "wed", "thu", "fri", "sat"};
+            String day = dayArray[dayCount];
+            dayTracker++;
+
+            int hour = 0;
+            int minute = 0;
+            Random r = new Random();
+            hour = r.nextInt(24);
+            minute = r.nextInt(60);
+            String startTime = hour + ":" + minute;
+            hour = r.nextInt(24);
+            hour = r.nextInt(60);
+            String endTime = hour + ":" + minute;
+            double latStartCoordinate = 100;
+            double lonStartCoordinate = 50;
+            double latEndCoordinate = 100;
+            double lonEndCoordinate = 100;
+            double distance = r.nextInt(60);
+            DriveInstance di = new DriveInstance(date, day, startTime, latStartCoordinate, lonStartCoordinate);
+            saveData.add(di.toJson());
+        }
+
     }
 
     private double totalDriveDistance()
