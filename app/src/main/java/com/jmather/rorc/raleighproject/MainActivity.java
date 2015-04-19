@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import org.json.JSONArray;
 
@@ -26,7 +27,6 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -54,7 +54,8 @@ public class MainActivity extends ActionBarActivity {
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
-
+        boolean recording = false;
+        intent.putExtra("isRecording", recording);
         startActivity(intent);
 
         Log.i("MainActivity", "Starting Dashboard");
@@ -63,14 +64,18 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void startButton()
+    public void startButton(View view)
     {
         //start a thread to deal with the recording, then display the dashboard
         //RecordingDrive rd = new RecordingDrive(); //might be threaded later and need more
         GPS startGPS = new GPS();
         startGPS.start();
+
         Intent intent = new Intent(this, DashboardActivity.class);
+        boolean recording = true;
+        intent.putExtra("isRecording", recording);
         startActivity(intent);
+
 
     }
 

@@ -16,7 +16,7 @@ public class GPS
 {
     public void start()
     {
-        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+       /* LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
         String date = "";
@@ -27,7 +27,7 @@ public class GPS
 
 
         DriveInstance newDrive = new DriveInstance(date,day,startTime,startLat,startLong);
-    }
+    */}
 
 
 }
