@@ -165,4 +165,15 @@
         android:layout_below="@+id/TodayLabel"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Trip"
+        android:id="@+id/endRecording"
+        android:layout_above="@+id/avgweekbutton"
+        android:layout_toRightOf="@+id/avgdaybutton"
+        android:layout_alignRight="@+id/avgspeedval"
+        android:layout_alignEnd="@+id/avgspeedval"
+        android:visibility="invisible" />
+
 </RelativeLayout>

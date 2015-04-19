@@ -15,7 +15,8 @@
         android:background="@drawable/start"
         android:layout_above="@+id/dashboard"
         android:layout_centerHorizontal="true"
-        android:nestedScrollingEnabled="false" />
+        android:nestedScrollingEnabled="false"
+        android:onClick="startButton"/>
 
     <ImageButton
         android:layout_width="200dp"

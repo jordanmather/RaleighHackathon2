@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class DashboardActivity extends ActionBarActivity {
@@ -14,10 +16,16 @@ public class DashboardActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("DashboardActivity", "in the OnCreate method");
         setContentView(R.layout.activity_dashboard);
-    }
+        Intent intent = this.getIntent();
+        Bundle bundle = intent.getExtras();
+        if(bundle.getBoolean("isRecording"))
+        {
+            Button endTrip = (Button)findViewById(R.id.endRecording);
+            endTrip.setVisibility(View.VISIBLE);
+        }
 
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
