@@ -1,12 +1,14 @@
 package com.jmather.rorc.raleighproject;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Created by Josh on 4/18/2015.
  */
 public class DriveInstance
 {
     /*
-	 * Created by Jordan Mather 9:00 4/17/15
 	 *This class sets up the structure for tracking all the information needed by the program.
 	 *This includes:
 	 * String: date
@@ -129,6 +131,39 @@ public class DriveInstance
         //from json instead of doing it ourselves, which is why I only put the general
         //format here.
 
+        String json = "";
+        JSONObject jObject = new JSONObject();
+        try
+        {
+            jObject.put("date", this.date);
+            jObject.put("day", this.day);
+            //make a time object to add to the json
+            JSONObject jTime = new JSONObject();
+            jTime.put("startTime", this.startTime);
+            jTime.put("endTime", this.endTime);
+            //put the jTime object in the jObject
+            jObject.put("time", jTime);
+            //make a startCoordinates object
+            JSONObject startCoordinatesObject = new JSONObject();
+            startCoordinatesObject.put("latitude", this.latStartCoordinate);
+            startCoordinatesObject.put("longitude", this.lonStartCoordinate);
+            //add startCoordinatesObject to jObject\
+            jObject.put("startCoordinates", startCoordinatesObject);
+            //made an endCoordinates object
+            JSONObject endCoordinatesObject = new JSONObject();
+            endCoordinatesObject.put("latitude", this.latEndCoordinate);
+            endCoordinatesObject.put("longitude", this.lonEndCoordinate);
+            //add endCoordinatesObject to jObject
+            jObject.put("endCoordinates", endCoordinatesObject);
+            //add distance to the jObject
+            jObject.put("distance", this.distance);
+        }
+        catch(JSONException e)
+        {
+            e.printStackTrace();
+        }
+
+        return jObject.toString();
 
         //returns a json representation of this object
         //the structure should be something like this:
